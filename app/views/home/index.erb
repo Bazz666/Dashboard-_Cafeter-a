@@ -1,0 +1,47 @@
+<h1>Dashboard Cafeteria</h1>
+<br>
+<hr>
+
+<h2>Total de ventas Mensuales (ultimos 12 meses)</h2>
+<%= column_chart @sales_all %>
+<br>
+<hr>
+<h2>Ventas Mensuales (ultimos 12 meses)</h2>
+<%= column_chart @sales_amount_month %>
+<br>
+<hr>
+<h2>Ventas promedio Mensual (ultimos 12 meses)</h2>
+<%= column_chart @sales_average %>
+<br>
+<hr>
+<h2>Venta total por origen (últimos 12 meses)</h2>
+<%= pie_chart @sales_amount12 %>
+<br>
+<hr>
+<h2>Venta total por origen (últimos 6 meses)</h2>
+<%= pie_chart @sales_amount6 %>
+<br>
+<hr>
+<h2>Venta total por origen (últimos 3 meses)</h2>
+<%= pie_chart @sales_amount3 %>
+<br>
+<hr>
+<h2>Venta total por origen (mensual)</h2>
+<%= pie_chart @sales_amount1 %>
+<br>
+<hr>
+<h2>Venta total por mezcla (últimos 12 meses)</h2>
+<%= pie_chart @sales_blend_coffee12 %>
+<br>
+<hr>
+<h2>Venta total por mezcla (últimos 6 meses)</h2>
+<%= pie_chart @sales_blend_coffee6 %>
+<br>
+<hr>
+<h2>Venta total por mezcla (últimos 3 meses)</h2>
+<%= pie_chart @sales_blend_coffee3 %>
+<br>
+<hr>
+<h2>Venta total por mezcla (mensual)</h2>
+<%= pie_chart @sales_blend_coffee1 %>
+<hr>
